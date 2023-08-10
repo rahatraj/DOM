@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Form</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+        <label for="">Name</label>
+        <input type="text" name="name" id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)"oninvalid="alert('Please this field')" required><br><br>
+        <label for="">Class</label>
+        <input type="text" name="class" id="" onfocus="focusFunction(this)"onblur="blurFunction(this)"oninput="inputFunction(this)><br><br>
+        <label for="country"></label>
+        <select name="country" id="" onfocus="focusFunction(this)"onblur="blurFunction(this)"oninput="inputFunction(this)>
+            <option value="">India</option>
+            <option value="">Pakistan</option>
+            <option value="">Bangaldesh</option>
+            <option value="">Srilanka</option>
+            <option value="">Nepal</option>
+        </select>
+        <input type="submit" value="submit">
+    </form><br><br>
+    <div id="test" style="border:1px solid red"></div>
+    <script>
+        function focusFunction(element){
+            element.style.background="lime";
+        }
+        function blurFunction(element){
+            element.style.background="";
+        }
+        function inputFunction(element){
+            var x = element.value;
+            document.getElementById("test").innerHTML=x;
+        }
+        function submitFunction(){
+            var x = document.getElementById("fname").value;
+            alert("Hello " + x);
+        }
+    </script>
+</body>
+</html>
