@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom html</title>
+    <style>
+
+        #box{
+            display: block;
+            border: 2px solid black;
+            /* padding: 30px; */
+            margin: 0 auto;
+            width: 55%;
+            background-color: bisque;
+            /* border-radius: 15px; */
+        }
+        #heading{
+            border: 2px solid black;
+            /* border-radius: 15px; */
+            background-color: red;
+        }
+        #heading h1,h2{
+            margin-left: 30px;
+        }
+        #navigator {
+            border: 2px solid black;
+            background-color: cadetblue;
+        }
+        #navigator ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:  hidden;
+        }
+        #navigator ul li{
+            float : left;
+        }
+        #navigator ul a{
+            display: block;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        .content {
+                  border: 2px solid black;
+        }
+        .content img{
+            width: 200px;
+            height: 200px;
+            float: left;
+            padding-right: 20px;
+            margin-left: 2px;
+            /* margin-top: 2px; */
+        }
+        .content p{
+            padding: 0px 10px;
+            margin-left: 10px;
+            /* margin-top: 0; */
+        }
+        .content #navbar{
+            float: right;
+        }
+        #footer{
+            text-align: center;
+            display: block;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="abc" style="border:  3px solid black" onclick="xyz()">
+        <div class="header">
+            <div id="heading">
+                <h1>Rahat Reza</h1>
+            </div>
+            <div id="navigator">
+                <ul>
+                    <li><a href="#Home"><b>Home</b></a></li>
+                    <li><a href="#About us"><b>About us</b></a></li>
+                    <li><a href="#Gallery"><b>Gallery</b></a></li>
+                    <li><a href="#Contact us"><b>About us</b></a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Sub heading</h2>
+                <img src="flower.jpg" alt="flower">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste placeat temporibus tempora quod praesentium est nesciunt doloremque delectus omnis, quo, veniam eveniet sunt id ab non? Assumenda hic culpa consectetur numquam. Excepturi ducimus velit inventore maxime facere molestias ipsa eum ad repellendus impedit! Repellendus nobis ipsam itaque recusandae. Nisi tenetur nihil saepe deserunt nam ipsum impedit voluptates excepturi nesciunt assumenda. Facere, officiis ut ipsum eveniet harum consequuntur? Vel non consectetur totam asperiores rerum? Possimus eveniet, debitis vero, velit corrupti, consectetur quis ea voluptas error esse aut itaque eaque. Vero at unde culpa tenetur, dolorum sit aperiam sint nostrum temporibus atque impedit, illum fugit omnis! Doloremque eius tempore placeat debitis iusto ea a et eaque optio tempora? Nulla deleniti cumque qui tenetur voluptatem repellat amet iusto minima! In suscipit voluptas perferendis, accusamus temporibus beatae esse, molestiae vel tempora pariatur quidem enim amet magni vitae voluptate optio. Repudiandae totam debitis consequuntur?</p>
+
+            </div>
+        </div>
+        <div id="footer">
+            rahatreza3199@gamil.com
+        </div>
+    </div>
+    <script src ="dom_main.js"></script>
+</body>
+</html>
