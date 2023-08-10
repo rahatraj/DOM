@@ -1,0 +1,27 @@
+#outer{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 350px;
+    background-color: darkkhaki;
+
+}
+#inner{
+    display: flex;
+    flex-direction:row;
+    width: 500px;
+    height: 200px;
+    margin: 40px;
+    margin-bottom: 40px ;
+    background-color: pink;
+}
+#inner div{
+    width: 100px;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 10px;
+    margin-top: 70px;
+    text-align: center;
+    /* float: right; */
+    
+}
